@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "SF-PD-Light";
+    src: url(SF-Pro-Display-Light.otf);
+}
+@font-face {
+    font-family: "SF-PD-Regular";
+    src: url(SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: "SF-PD-Medium";
+    src: url(SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: "SF-PD-SemiBold";
+    src: url(SF-Pro-Display-Semibold.otf);
+}
+
+@font-face {
+    font-family: "SF-PD-Bold";
+    src: url(SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: "SF-PD-Black";
+    src: url(SF-Pro-Display-Black.otf);
+}
+
+@font-face {
+    font-family: "SF-PD-Heavy";
+    src: url(SF-Pro-Display-Heavy.otf);
+}
+
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url(SpaceGrotesk[wght].ttf);
+}

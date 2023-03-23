@@ -1,0 +1,34 @@
+#about-hero {
+    height: 100vh;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        background-image: linear-gradient(140deg, #fff, #fff, #E01A4F, #fff);
+        background-size: 5000%;
+        font-size: 42px;
+        padding-bottom: 10px;
+        background-clip: text;
+        color: transparent;
+        animation: textgradient 30s linear infinite;
+        @keyframes textgradient {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+
+        span {
+            color: #ff2626;
+        }
+
+        .autotype {
+            color: transparent;
+        }
+    }
+
+}

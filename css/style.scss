@@ -135,6 +135,7 @@ table {
     border-spacing: 0;
 }
 
+
 // ###################################################################
 // ######################### D E F A U L T S #########################
 // ###################################################################
@@ -217,33 +218,34 @@ nav {
     width: 100%;
     padding: 50px 100px;
     transition: all 300ms ease-in-out;
+    z-index: 3;
 
-.menu {
-    display: flex;
-    flex-flow: column;
-    color: white;
-    gap: 15px;
-    
+    .menu {
+        display: flex;
+        flex-flow: column;
+        color: white;
+        gap: 15px;
 
-    .menu-item a{
-        opacity: .4;
-        font-size: 24px;
-        transition: all 100ms ease-in-out;
-        cursor: pointer;
-        text-decoration: none;
-        color: #fff;
-        
+
+        .menu-item a {
+            opacity: .4;
+            font-size: 32px;
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        .menu-item a:hover {
+            font-size: 68px;
+            opacity: 1;
+        }
+
+        .menu-item a:hover>span {
+            color: #ff2626;
+        }
     }
-
-    .menu-item a:hover {
-        font-size: 48px;
-        opacity: 1;
-    }
-
-    .menu-item a:hover> span {
-        color: #ff2626;
-    }
-}    
 }
 
 #hero {
@@ -253,28 +255,33 @@ nav {
     @include flexbox1();
 
     .hexagon {
-        position:absolute;
+        position: absolute;
         right: 45%;
         z-index: -1;
-        animation: hexagon 40s linear infinite ;
+        animation: hexagon 40s linear infinite;
+
         @keyframes hexagon {
             0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(360deg);
             }
         }
     }
+
     .hexagon2 {
-        position:absolute;
+        position: absolute;
         right: 45%;
         z-index: -1;
-        animation: hexagon2 5s linear infinite ;
+        animation: hexagon2 5s linear infinite;
+
         @keyframes hexagon2 {
             0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(-360deg);
             }
@@ -348,6 +355,7 @@ nav {
     transition-timing-function: ease-in-out;
     transition-duration: 100ms;
 }
+
 #nav-toggle>.open {
     opacity: 1;
 }
@@ -428,7 +436,7 @@ body[data-nav="true"]>#nav-toggle>.open {
     }
 
     .card {
-        
+
         background: #181818;
         border-radius: 10px;
         height: 360px;
@@ -525,10 +533,12 @@ body[data-nav="true"]>#nav-toggle>.open {
             padding-bottom: 25px;
             line-height: 50px;
             animation: textgradient 30s linear infinite;
+
             @keyframes textgradient {
                 0% {
                     background-position: 0%;
                 }
+
                 100% {
                     background-position: 400%;
                 }
@@ -643,10 +653,12 @@ body[data-nav="true"]>#nav-toggle>.open {
             background-size: 400%;
             animation: textgradient 30s linear infinite;
             color: transparent;
+
             @keyframes textgradient {
                 0% {
                     background-position: 0%;
                 }
+
                 100% {
                     background-position: 400%;
                 }
@@ -685,6 +697,7 @@ body[data-nav="true"]>#nav-toggle>.open {
                 background-color: transparent;
                 padding: 20px;
                 font-weight: bold;
+                color: #fff;
             }
 
             .contact-button {
@@ -712,6 +725,7 @@ footer {
             h5 {
 
                 font-size: 32px;
+
                 span {
                     color: #FF2626;
                 }
@@ -824,21 +838,36 @@ footer {
         }
     }
 
+    #about-me {
+        .container {
+            p {
+                width: auto;
+            }
+        }
+    }
+
     #projects {
 
         .header {
 
             padding: 0 10px;
+
             h3 {
                 padding-bottom: 16px;
             }
         }
+
         .project {
-            .mockup {
-                left: -150px;
+
+            .row {
+                margin: 0;
+                .mockup {
+                    left: -150px;
+                }
             }
         }
     }
+
     #contacts {
 
         .info {
@@ -869,5 +898,5 @@ footer {
             font-size: 7px;
         }
     }
-    
+
 }

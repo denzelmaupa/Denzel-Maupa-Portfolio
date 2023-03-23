@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style-bio.css" rel="stylesheet">
+</head>
+
+<body data-nav="false">
+    <div id="about-hero" class="container">
+        <h2>Pizza Lover<span>.</span> Milkshake Slurper<span>.</span><br>Music Hobbyist<span>.</span> Creative
+            <span class="autotype"></span><span>.</span>
+        </h2>
+    </div>
+    <div id="nav-placeholder">
+
+    </div>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- ++++++++++++++++++++ S E C T I O N   2 ++++++++++++++ -->
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    
+    <div id="section2">
+        
+
+    </div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("nav.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/about.js"></script>
+</body>
+
+</html>

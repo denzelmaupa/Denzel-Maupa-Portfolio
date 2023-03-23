@@ -761,6 +761,10 @@ footer {
 
 @media screen and (max-width: 1276px) {
 
+    #nav-toggle {
+        left: 50%;
+    }
+
     #contacts {
         padding: 20px;
 
@@ -772,7 +776,22 @@ footer {
         }
     }
 
+    footer {
+        padding: 50px 20px;
+
+        .container {
+            .row {
+                .logo {
+                    img {
+                        
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width: 1200px) {
 

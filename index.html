@@ -378,10 +378,10 @@
                     <p>Let's <span>get to</span><br>work<br>together.</p>
                 </div>
                 <div class="form col-lg-5">
-                    <form onsubmit="sendEmail(); reset; return false;" name="contactform" action="">
-                        <input id="name" type="text" placeholder="Full Name" required>
-                        <input id="email" type="email" placeholder="Email Address" required>
-                        <textarea id="message" name="" id="" cols="30" rows="10" placeholder="Write me something!"
+                    <form name="contactform" action="https://formsubmit.co/9b20804d2e4bf1ae09b034ce64e4a088" method="post">
+                        <input name="name" id="name" type="text" placeholder="Full Name" required>
+                        <input name="email" id="email" type="email" placeholder="Email Address" required>
+                        <textarea name="message" id="message" name="" id="" cols="30" rows="10" placeholder="Write me something!"
                             required></textarea>
                         <button type="submit" class="btn button-one contact-button">HOLLA AT ME</button>
                     </form>
@@ -389,60 +389,12 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 logo">
-                    <img src="img/Logo Official No bg.png" alt="">
-                </div>
-                <div class="col-lg-8 links">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 link-item">
-                            <h5>Paperwork<span>.</span></h5>
-                            <a href="">My CV</a>
-                            <a href="">Invoices</a>
-                            <a href="">Contracts</a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 link-item">
-                            <h5>Sitemap<span>.</span></h5>
-                            <a href="#">Home</a>
-                            <a href="biography.html">My Biography</a>
-                            <a href="">My Work</a>
-                            <a href="#contacts">My Contacts</a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 link-item">
-                            <h5>My Social Media<span>.</span></h5>
-                            <a href="https://www.instagram.com/denzel_maupa_official">Instagram</a>
-                            <a href="">Facebook</a>
-                            <a href="https://wa.me/+263788524927">WhatsApp</a>
-                            <a href="">Twitter</a>
-                            <a href="">Snapchat</a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 link-item">
-                            <h5>My Work<span>.</span></h5>
-                            <a href="">Dribbble</a>
-                            <a href="">Behance</a>
-                            <a href="">Figma</a>
-                            <a href="">Instagram</a>
-                            <a href="">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; 2023. All Rights Reserved. Designed and Developed by Denzel Maupa. Signed, with love.
-            </p>
-        </div>
-    </footer>
+    <div id="footer"></div>
+<!-- <footer id="footer"></footer> -->
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="js/jquery-3.6.3.min.js"></script>
-    <script>
-        $.get("nav.html", function (data) {
-            $("#nav-placeholder").replaceWith(data);
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/index.js"></script>
     <script src="js/main.js"></script>
 </body>
 

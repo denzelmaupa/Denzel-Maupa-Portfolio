@@ -1,0 +1,211 @@
+body {
+    // position: relative;
+    overflow-x: hidden;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container {
+    // max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tab-nav {
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    // width: fit-content;
+    // max-width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+    border-bottom: 1px solid #222222;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: #181818;
+}
+
+.tab-nav li h3 {
+    padding: 40px 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-nav li.active h3 {
+    background-image: linear-gradient(140deg, #FF64EF, #FF2626);
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+}
+
+// .tab-nav li:not(:last-child) {
+//     // margin-right: 70px;
+// }
+
+.tab-body {
+    margin-top: 50px;
+    display: none;
+    animation: fade 0.8s;
+}
+
+.tab-body.active {
+    display: flex;
+    flex-flow: column;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#portfolio-tabs {
+    position: relative;
+    padding: 100px 0;
+
+    .header {
+        h3 {
+            padding-top: 16px;
+        }
+
+        p {
+            font-family: "SF-PD-Bold";
+            font-size: 46px;
+            background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
+            background-clip: text;
+            background-size: 400%;
+            color: transparent;
+            padding-bottom: 25px;
+            line-height: 50px;
+            animation: textgradient 30s linear infinite;
+
+            @keyframes textgradient {
+                0% {
+                    background-position: 0%;
+                }
+
+                100% {
+                    background-position: 400%;
+                }
+            }
+
+        }
+    }
+
+    .tab-container {
+        .tab-body {
+            .project {
+                // position: relative;
+                padding-bottom: 100px;
+
+                .mockup {
+                    position: relative;
+                    left: -200px;
+
+                    img {
+                        width: 130%;
+                    }
+                }
+
+                .mockup-mobile {
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .info {
+                    position: relative;
+                    right: 0;
+                    color: #fff;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    padding: 0 25px;
+
+                    h4 {
+                        font-size: 32px;
+                    }
+
+                    h2 {
+                        margin-top: 5px;
+                        font-size: 16px;
+                        color: #fff;
+                        opacity: 0.4;
+                        font-family: "SF-PD-Bold";
+                    }
+
+                    p {
+                        font-size: 18px;
+                        padding: 40px 0;
+                        line-height: 32px;
+                        font-family: "SF-PD-Medium";
+                    }
+
+                    .preview-button {
+                        width: fit-content;
+                        padding: 10px 0;
+                        letter-spacing: 0;
+
+                        i {
+                            padding-left: 10px;
+
+                            svg {
+                                width: 12px;
+                                fill: #FF2626;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .button {
+                text-align: center;
+
+                .portfolio-button {
+                    background-color: #f0f0f0;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tab-nav li h3 {
+        padding: 20px 10px;
+    }
+    #portfolio-tabs {
+
+        .header {
+
+            padding: 0 10px;
+
+            h3 {
+                padding-bottom: 16px;
+            }
+        }
+
+        .project {
+
+            .row {
+                margin: 0;
+                .mockup {
+                    left: -150px;
+                }
+            }
+        }
+    }
+}

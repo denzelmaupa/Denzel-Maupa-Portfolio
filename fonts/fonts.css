@@ -1,35 +1,35 @@
 @font-face {
     font-family: "SF-PD-Light";
-    src: url(SF-Pro-Display-Light.otf);
+    src: url(SF-Pro-Display-Light.woff2);
 }
 @font-face {
     font-family: "SF-PD-Regular";
-    src: url(SF-Pro-Display-Regular.otf);
+    src: url(SF-Pro-Display-Regular.woff2);
 }
 
 @font-face {
     font-family: "SF-PD-Medium";
-    src: url(SF-Pro-Display-Medium.otf);
+    src: url(SF-Pro-Display-Medium.woff2);
 }
 
 @font-face {
     font-family: "SF-PD-SemiBold";
-    src: url(SF-Pro-Display-Semibold.otf);
+    src: url(SF-Pro-Display-Semibold.woff2);
 }
 
 @font-face {
     font-family: "SF-PD-Bold";
-    src: url(SF-Pro-Display-Bold.otf);
+    src: url(SF-Pro-Display-Bold.woff2);
 }
 
 @font-face {
     font-family: "SF-PD-Black";
-    src: url(SF-Pro-Display-Black.otf);
+    src: url(SF-Pro-Display-Black.woff2);
 }
 
 @font-face {
     font-family: "SF-PD-Heavy";
-    src: url(SF-Pro-Display-Heavy.otf);
+    src: url(SF-Pro-Display-Heavy.woff2);
 }
 
 @font-face {

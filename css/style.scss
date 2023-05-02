@@ -322,6 +322,7 @@ nav {
 
 }
 
+
 #nav-toggle {
     height: 5rem;
     width: 5rem;
@@ -390,6 +391,7 @@ body[data-nav="true"]>#nav-toggle>.open {
     transform: translate(-50%, -50%) scale(1);
 }
 
+
 // ***************  A B O U T   M E   S E C T I O N *********************
 
 #about-me {
@@ -433,15 +435,15 @@ body[data-nav="true"]>#nav-toggle>.open {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 10px;
         max-width: 1070px;
         width: calc(100% - 20px);
     }
 
-    #cards:hover > .card > .card-boarder {
+    #cards:hover>.card>.card-boarder {
         opacity: 1;
     }
-    
+
     .card {
         background: #181818;
         border-radius: 10px;
@@ -451,11 +453,11 @@ body[data-nav="true"]>#nav-toggle>.open {
         position: relative;
         text-decoration: none;
     }
-    
+
     .card:hover::before {
         opacity: 1;
     }
-    
+
     .card::before,
     .card>.card-boarder {
         background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
@@ -472,22 +474,22 @@ body[data-nav="true"]>#nav-toggle>.open {
         top: 0;
         width: 100%;
     }
-    
+
     .card::before {
         background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
                 rgba(255, 255, 255, .06),
                 transparent 40%);
         z-index: 3;
-    
+
     }
-    
+
     .card>.card-boarder {
         background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
                 rgba(255, 255, 255, .3),
                 transparent 40%);
         z-index: 1;
     }
-    
+
     .card>.card-content {
         background: var(--card-color);
         border-radius: inherit;
@@ -498,7 +500,7 @@ body[data-nav="true"]>#nav-toggle>.open {
         position: relative;
         @include flexbox1();
         color: #fff;
-    
+
         h2 {
             font-size: 24px;
             margin: 25px 0;
@@ -788,7 +790,7 @@ footer {
             .row {
                 .logo {
                     img {
-                        
+
                         height: 100%;
                     }
                 }
@@ -885,6 +887,7 @@ footer {
 
             .row {
                 margin: 0;
+
                 .mockup {
                     left: -150px;
                 }

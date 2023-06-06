@@ -28,4 +28,24 @@
 }
 #about-hero h2 .autotype {
   color: transparent;
+}
+
+#about-sec3 {
+  width: 50%;
+  line-height: 25px;
+}
+#about-sec3 h3 {
+  background-image: linear-gradient(140deg, #FF64EF, #FF2626);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#about-sec3 p {
+  color: #fff;
+  font-family: "SF-PD-Light";
+}
+#about-sec3 p a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "SF-PD-Bold";
 }/*# sourceMappingURL=style-bio.css.map */

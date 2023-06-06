@@ -332,7 +332,7 @@ body:not([data-nav=true]) > #nav-toggle:hover > .open {
 body:not([data-nav=false]) > nav {
   display: block;
   bottom: 0;
-  height: 90vh;
+  height: 100vh;
 }
 
 body[data-nav=true] > #nav-toggle > .close {

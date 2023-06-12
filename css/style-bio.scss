@@ -13,10 +13,12 @@
         background-clip: text;
         color: transparent;
         animation: textgradient 30s linear infinite;
+
         @keyframes textgradient {
             0% {
                 background-position: 0%;
             }
+
             100% {
                 background-position: 100%;
             }
@@ -33,19 +35,61 @@
 
 }
 
+#section2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+    #denzel-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-image: url(../img/Denzel\ Maupa.jpeg);
+        background-size: cover;
+        // background-position: center;
+        z-index: 2;
+    }
+
+    #denzel-img-phone {
+        display: none;
+
+    }
+
+
+    h1 {
+        z-index: 3;
+        font-size: 96px;
+        background-image: linear-gradient(140deg, #FF64EF, #FF2626);
+        background-clip: text;
+        color: transparent;
+
+        span {
+            color: #FF2626;
+        }
+    }
+}
+
 #about-sec3 {
     width: 50%;
     line-height: 25px;
+    padding: 50px 10px;
 
     h3 {
         background-image: linear-gradient(140deg, #FF64EF, #FF2626);
         background-clip: text;
         color: transparent;
-        
+
     }
-  
+
     p {
-        
+
         color: #fff;
         font-family: "SF-PD-Light";
 
@@ -54,5 +98,33 @@
             color: #fff;
             font-family: "SF-PD-Bold";
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #section2 {
+        #denzel-img {
+            display: none;
+        }
+
+        #denzel-img-phone {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+            background-image: url(../img/Denzel\ Maupa.jpeg);
+            background-size: cover;
+
+            z-index: 2;
+
+        }
+    }
+
+    #about-sec3 {
+        width: 100%;
     }
 }

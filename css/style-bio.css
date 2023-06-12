@@ -30,9 +30,45 @@
   color: transparent;
 }
 
+#section2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+#section2 #denzel-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url(../img/Denzel\ Maupa.jpeg);
+  background-size: cover;
+  z-index: 2;
+}
+#section2 #denzel-img-phone {
+  display: none;
+}
+#section2 h1 {
+  z-index: 3;
+  font-size: 96px;
+  background-image: linear-gradient(140deg, #FF64EF, #FF2626);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#section2 h1 span {
+  color: #FF2626;
+}
+
 #about-sec3 {
   width: 50%;
   line-height: 25px;
+  padding: 50px 10px;
 }
 #about-sec3 h3 {
   background-image: linear-gradient(140deg, #FF64EF, #FF2626);
@@ -48,4 +84,25 @@
   text-decoration: none;
   color: #fff;
   font-family: "SF-PD-Bold";
+}
+
+@media screen and (max-width: 768px) {
+  #section2 #denzel-img {
+    display: none;
+  }
+  #section2 #denzel-img-phone {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/Denzel\ Maupa.jpeg);
+    background-size: cover;
+    z-index: 2;
+  }
+  #about-sec3 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style-bio.css.map */

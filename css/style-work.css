@@ -2,6 +2,32 @@ body {
   overflow-x: hidden;
 }
 
+.graphicslink {
+  text-decoration: none;
+  background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 400%;
+  color: transparent;
+  animation: textgradient 30s linear infinite;
+}
+@keyframes textgradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.graphicslink:hover {
+  cursor: pointer !important;
+  color: transparent;
+  background-size: 1000%;
+  text-decoration: underline;
+  transition: all 300ms ease-in-out;
+}
+
 .tab {
   display: flex;
   justify-content: center;

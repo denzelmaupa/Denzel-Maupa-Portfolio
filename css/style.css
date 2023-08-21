@@ -185,6 +185,24 @@ h3 {
   transition: ease-in-out 0.1s;
 }
 
+.hero-button2 {
+  text-decoration: none;
+  background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: 400%;
+  color: transparent;
+  animation: textgradient 10s linear infinite;
+}
+@keyframes textgradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
 nav {
   position: fixed;
   bottom: -500px;
@@ -276,25 +294,6 @@ nav .menu .menu-item a:hover > span {
 #hero .hero-button {
   position: absolute;
   bottom: 250px;
-}
-#hero .hero-button2 {
-  position: absolute;
-  bottom: 200px;
-  text-decoration: none;
-  background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-size: 400%;
-  color: transparent;
-  animation: textgradient 10s linear infinite;
-}
-@keyframes textgradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 400%;
-  }
 }
 
 #nav-toggle {
@@ -470,13 +469,13 @@ body[data-nav=true] > #nav-toggle > .open {
   line-height: 20px;
 }
 
-#projects {
+.projects {
   padding: 100px 0;
 }
-#projects .header h3 {
+.projects .header h3 {
   padding-top: 16px;
 }
-#projects .header p {
+.projects .header p {
   font-family: "SF-PD-Bold";
   font-size: 46px;
   background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
@@ -496,26 +495,26 @@ body[data-nav=true] > #nav-toggle > .open {
     background-position: 400%;
   }
 }
-#projects .sub-header {
+.projects .sub-header {
   margin: 100px 0;
 }
-#projects .sub-header2 {
+.projects .sub-header2 {
   margin-bottom: 100px;
 }
-#projects .project {
+.projects .project {
   padding-bottom: 100px;
 }
-#projects .project .mockup {
+.projects .project .mockup {
   position: relative;
   left: -200px;
 }
-#projects .project .mockup img {
+.projects .project .mockup img {
   width: 130%;
 }
-#projects .project .mockup-mobile img {
+.projects .project .mockup-mobile img {
   width: 100%;
 }
-#projects .project .info {
+.projects .project .info {
   position: relative;
   right: 0;
   color: #fff;
@@ -524,39 +523,39 @@ body[data-nav=true] > #nav-toggle > .open {
   justify-content: center;
   padding: 0 25px;
 }
-#projects .project .info h4 {
+.projects .project .info h4 {
   font-size: 32px;
 }
-#projects .project .info h2 {
+.projects .project .info h2 {
   margin-top: 5px;
   font-size: 16px;
   color: #fff;
   opacity: 0.4;
   font-family: "SF-PD-Bold";
 }
-#projects .project .info p {
+.projects .project .info p {
   font-size: 18px;
   padding: 40px 0;
   line-height: 32px;
   font-family: "SF-PD-Medium";
 }
-#projects .project .info .preview-button {
+.projects .project .info .preview-button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 0;
   letter-spacing: 0;
 }
-#projects .project .info .preview-button i {
+.projects .project .info .preview-button i {
   padding-left: 10px;
 }
-#projects .project .info .preview-button i svg {
+.projects .project .info .preview-button i svg {
   width: 12px;
   fill: #FF2626;
 }
-#projects .button {
+.projects .button {
   text-align: center;
 }
-#projects .button .portfolio-button {
+.projects .button .portfolio-button {
   background-color: #f0f0f0;
   color: #000000;
 }

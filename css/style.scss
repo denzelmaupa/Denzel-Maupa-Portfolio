@@ -195,6 +195,26 @@ h3 {
 
 }
 
+.hero-button2 {
+    text-decoration: none;
+    background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
+    background-clip: text;
+    background-size: 400%;
+    color: transparent;
+    animation: textgradient 10s linear infinite;
+
+    @keyframes textgradient {
+        0% {
+            background-position: 0%;
+        }
+
+        100% {
+            background-position: 400%;
+        }
+    }
+
+}
+
 
 @mixin flexbox1 {
     display: flex;
@@ -319,29 +339,6 @@ nav {
         bottom: 250px;
 
     }
-
-    .hero-button2 {
-        position: absolute;
-        bottom: 200px;
-        text-decoration: none;
-        background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
-        background-clip: text;
-        background-size: 400%;
-        color: transparent;
-        animation: textgradient 10s linear infinite;
-    
-        @keyframes textgradient {
-            0% {
-                background-position: 0%;
-            }
-    
-            100% {
-                background-position: 400%;
-            }
-        }
-
-    }
-
 }
 
 
@@ -544,7 +541,7 @@ body[data-nav="true"]>#nav-toggle>.open {
 
 // ************************ P O R T F O L I O ***************************
 
-#projects {
+.projects {
     padding: 100px 0;
 
     .header {

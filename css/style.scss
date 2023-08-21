@@ -320,6 +320,28 @@ nav {
 
     }
 
+    .hero-button2 {
+        position: absolute;
+        bottom: 200px;
+        text-decoration: none;
+        background-image: linear-gradient(140deg, #FF64EF, #FF2626, #FF64EF, #FF2626, #FF64EF, #FF2626);
+        background-clip: text;
+        background-size: 400%;
+        color: transparent;
+        animation: textgradient 10s linear infinite;
+    
+        @keyframes textgradient {
+            0% {
+                background-position: 0%;
+            }
+    
+            100% {
+                background-position: 400%;
+            }
+        }
+
+    }
+
 }
 
 
@@ -860,7 +882,11 @@ footer {
 
     #hero {
         .hero-button {
-            bottom: 150px;
+            bottom: 170px;
+        }
+
+        .hero-button2 {
+            bottom: 250px;
         }
     }
 
